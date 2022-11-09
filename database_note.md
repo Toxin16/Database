@@ -14,9 +14,8 @@ ctrl + c : 작업취소
 $conn = mysqli_connect('localhost', 'root', '', 'goods'); 
 
 221109
-정의어 : 데이터베이스에 들어 있는 데이터를 조회하거나 검색하기 위한 명령어를 말하는 것
-(DDL) : CREATE TABLE //생성, ALTER TABLE //변경, DROP //삭제
+정의어(DDL) : 데이터베이스에 들어 있는 데이터를 조회하거나 검색하기 위한 명령어를 말하는 것. CREATE TABLE //생성, ALTER TABLE //변경, DROP //삭제
 
-조작어 : 테이블과 같은 데이터 구조를 정의하는데 사용되는 명령어들로 (생성, 변경, 삭제, 이름변경) 데이터 구조와 관련된 명령어들을 말함.
-(DML) : select(검색), update(수정), insert(삽입), 삭제(delete)
-attribute = tuple /
+조작어(DML) : 테이블과 같은 데이터 구조를 정의하는데 사용되는 명령어들로 (생성, 변경, 삭제, 이름변경) 데이터 구조와 관련된 명령어들을 말함. select(검색), update(수정), insert(삽입), 삭제(delete)
+
+제어어 (DCL) : 
