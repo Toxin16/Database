@@ -1,4 +1,5 @@
 ## 데이터베이스
+cls 터미널 지우기
 C:\laragon\bin\mysql\mysql-5.7.33-winx64\bin>
 mysql -u root -p (enter), root password 없음
 show databases; //데이터베이스 목록출력, show tables; //테이블 출력, desc fruit; //fruit table 목록출력
@@ -18,4 +19,7 @@ $conn = mysqli_connect('localhost', 'root', '', 'goods');
 
 조작어(DML) : 테이블과 같은 데이터 구조를 정의하는데 사용되는 명령어들로 (생성, 변경, 삭제, 이름변경) 데이터 구조와 관련된 명령어들을 말함. select(검색), update(수정), insert(삽입), 삭제(delete)
 
-제어어 (DCL) : 
+relation : 2차원의 테이블(스프레드 시트와 유사)
+record : 릴레이션의 각 행
+tuple : 레코드를 공식적으로 부르는 용어
+attribute : 릴레이션에서 이름을 가진 하나의 열
