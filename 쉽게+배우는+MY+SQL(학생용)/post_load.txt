@@ -1,0 +1,35 @@
+﻿load data infile 'C:/SQL/zip_code/mysql-post.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_gangwon.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_gyunggi.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_gyeongnam .txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_gyeongbuk.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_gwangju.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_daegu.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_daejeon.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_busan.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_seoul.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_sejong.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_ulsan.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_incheon.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_jeonnam.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_jeonbuk.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_jeju.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_chungnam.txt' into table post fields terminated by '|';
+load data infile 'C:/SQL/zip_code/build_chungbuk.txt' into table post fields terminated by '|';
+
+create index post_no_prim on post(post_no);
+create index sido_name_prim on post(sido_name);
+create index sigun_name_prim on post(sigun_name);
+create index road_name_prim on post(road_name);
+create index building_bon_prim on post(building_bon);
+create index building_boo_prim on post(building_boo);
+create index town_building_prim on post(town_building);
+create index row_dongname_prim on post(row_dongname);
+
+select post_no, sido_name, sigun_name, road_name, building_bon, building_boo, town_building, row_dongname
+from post
+where post_no = "06034" and road_name = "압구정로2길";
+
+select post_no, sido_name, sigun_name, road_name, building_bon, building_boo, town_building, row_dongname
+from post
+where post_no = "17826" and road_name = "잔다리1길";
